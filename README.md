@@ -1,2 +1,2 @@
 # MyFirstAIBot
-First Ai application using GitHUb
+First AI application using GitHUb
