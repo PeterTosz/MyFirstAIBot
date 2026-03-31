@@ -1,0 +1,7 @@
+services:
+  mein-ki-bot:
+    image: openai/chatgpt-clone  # Welches Programm soll geladen werden?
+    ports:
+      - "8080:80"                # Über welche Internetadresse erreichbar?
+    environment:
+      - API_KEY=dein_schlüssel   # Dein Passwort für die KI
