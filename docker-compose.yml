@@ -1,7 +1,8 @@
 services:
-  mein-ki-bot:
-    image: openai/chatgpt-clone  # Welches Programm soll geladen werden?
-    ports:
-      - "8080:80"                # Über welche Internetadresse erreichbar?
+  mein-gemini-bot:
+    image: librechat/librechat:latest
     environment:
-      - API_KEY=dein_schlüssel   # Dein Passwort für die KI
+      - GOOGLE_KEY=dein_google_api_key_hier  # Hier kommt dein Google Key rein
+      - PROVIDER=google                      # Du sagst der App: "Nutze Google"
+    ports:
+      - "8080:80"
